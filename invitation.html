@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Invitation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #b5e7a0; /* Green */
+        }
+        header {
+            background-color: #003366; /* Deep Blue */
+            text-align: center;
+            padding: 20px 0;
+            color: #fff;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s both;
+            position: relative;
+        }
+
+        /* Header Animation Keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Shimmer Animation Keyframes */
+        @keyframes shimmer {
+            0% {
+                background-position: -1000px 0;
+            }
+            100% {
+                background-position: 1000px 0;
+            }
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+            background: linear-gradient(45deg, #00FFCC, #33CCFF, #CC99FF, #FF99CC, #00FFCC);
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        p {
+            margin: 0;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 600px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s both, fadeInSection 1s both;
+        }
+
+        /* Wedding Details Section Animation Keyframes */
+        @keyframes fadeInSection {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            color: #ff7f50;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Marriage Invitation</h1>
+        <p>Dear family and friends,</p>
+        <p>We are thrilled to invite you to the joyous occasion of my brother's marriage.</p>
+        <p>Save the date and join us in celebrating this special day!</p>
+    </header>
+
+    <section>
+        <h2>Wedding Details</h2>
+        <p>Date: Friday, [8th Dec 2023]</p>
+        <p>Time: [7.00pm]</p>
+        <p>Venue: [Dhenkanal]</p>
+        <p>Address: [Kalyani Mandap]</p>
+        <p>RSVP: [Subodha Pradhan]</p>
+    </section>
+
+    <footer>
+        <p>Contact us at [7205111000]</p>
+    </footer>
+</body>
+</html>
